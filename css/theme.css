@@ -6360,8 +6360,8 @@ html.dark .text-muted {
 /* RTL */
 /* #Footer */
 #footer {
-	background: #212529;
-	border-top: 4px solid #212529;
+	background: #009dd2;
+	border-top: 4px solid #009dd2;
 	font-size: 0.9em;
 	margin-top: 50px;
 	padding: 0;
@@ -6390,8 +6390,8 @@ html.dark .text-muted {
 
 #footer .footer-ribbon span {
 	color: #FFF;
-	font-size: 1.6em;
-	font-family: "Shadows Into Light", cursive;
+	font-size: 1.4em;
+	/* font-family: "Shadows Into Light", cursive; */
 }
 
 #footer h1, #footer h2, #footer h3, #footer h4, #footer h5, #footer h6 {
@@ -6669,7 +6669,7 @@ html.dark .text-muted {
 }
 
 #footer .footer-copyright {
-	background: #1c2023;
+	background: #ffffff;
 }
 
 #footer .footer-copyright nav {
@@ -6702,7 +6702,7 @@ html.dark .text-muted {
 	color: #555;
 	margin: 0;
 	padding: 0;
-	font-size: 0.9em;
+	font-size: 1em;
 }
 
 #footer .footer-copyright.footer-copyright-style-2 {
