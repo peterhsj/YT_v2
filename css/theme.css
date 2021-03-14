@@ -1165,6 +1165,20 @@ pre {
 #header.header-effect-shrink .header-logo {
 	display: flex;
 	align-items: center;
+	font-size: 1.6rem;
+}
+
+#header.header-effect-shrink .header-logo a {
+	text-decoration: none;
+}
+
+#header.header-effect-shrink .header-logo a:hover {
+	text-decoration: none;
+}
+
+#header.header-effect-shrink .header-logo .icon-logo_2 {
+	font-size: 45px;
+	line-height: 45px;
 }
 
 #header.header-dark .header-body {
