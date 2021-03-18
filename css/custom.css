@@ -2,3 +2,8 @@
 .blockquote__bg {
   background-color: #FFFFFF;
 }
+
+.image-hotspots {
+  display: flex;
+  justify-content: center;
+}
