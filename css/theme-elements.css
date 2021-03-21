@@ -15893,6 +15893,9 @@ html.gecko .sort-destination.sort-destination-margin > [class*="col-"] {
 	-webkit-backface-visibility: hidden;
 	backface-visibility: hidden;
 	transform: translate3d(0, 0, 0);
+
+	border: 1px solid #ddd;
+	padding: 0.25rem;
 }
 
 .thumb-info .thumb-info-wrapper {
@@ -16044,6 +16047,9 @@ html.gecko .sort-destination.sort-destination-margin > [class*="col-"] {
 	text-transform: uppercase;
 	z-index: 2;
 	line-height: 2.3;
+
+	line-height: 1.5;
+	font-size: 0.9em;
 }
 
 .thumb-info .owl-carousel {

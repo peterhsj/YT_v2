@@ -2,8 +2,56 @@
 .blockquote__bg {
   background-color: #FFFFFF;
 }
-
 .image-hotspots {
   display: flex;
   justify-content: center;
+}
+.pro-spec {
+  clear: both;
+}
+.pro-spec ul.specNote {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  list-style-type: none;
+  margin: 20px auto;
+  max-width: 560px;
+  padding: 0;
+}
+.pro-spec ul.specNote li {
+  background-color: #e37605;
+  border-radius: 5px;
+  color: #FFFFFF;
+  font-size: 14px;
+  line-height: 1.5;
+  margin: 10px 5px;
+  padding: 14px 10px 10px 10px;
+  text-align: center;
+  width: 100px;
+  display: inline-flex;
+  align-items: center;
+  flex-direction: column;
+  justify-content: space-between;
+}
+.pro-spec ul.specNote li i {
+  color: #FFFFFF;
+  font-size: 28px;
+  font-weight: 400;
+  padding-bottom: 10px;
+  text-align: center;
+}
+
+.modal-body p.note,
+.modal-body p.noteb {
+  font-size: 15px;
+  margin-bottom: 5px;
+}
+
+.embed-item {
+  border: 0;
+  height: 100%;
+  left: 0;
+  position: absolute;
+  top: 0;
+  width: 100%;
 }
