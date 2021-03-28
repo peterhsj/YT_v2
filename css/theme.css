@@ -1464,10 +1464,10 @@ html.sticky-header-enabled.sticky-header-active #header .header-logo-sticky-chan
 
 	#header .header-nav-main nav > ul > li.dropdown .dropdown-menu li a {
 		border-bottom: 1px solid #f7f7f7;
-		color: #777;
-		font-size: 0.8em;
+		color: #666;
+		font-size: 1em;
 		font-weight: 400;
-		padding: 6px 18px 6px 18px;
+		padding: 8px 18px 8px 18px;
 		position: relative;
 		text-transform: none;
 		letter-spacing: -0.5px;
@@ -1478,7 +1478,8 @@ html.sticky-header-enabled.sticky-header-active #header .header-logo-sticky-chan
 	}
 
 	#header .header-nav-main nav > ul > li.dropdown .dropdown-menu li:hover > a, #header .header-nav-main nav > ul > li.dropdown .dropdown-menu li:focus > a, #header .header-nav-main nav > ul > li.dropdown .dropdown-menu li.active > a, #header .header-nav-main nav > ul > li.dropdown .dropdown-menu li:active > a, #header .header-nav-main nav > ul > li.dropdown .dropdown-menu li.open > a, #header .header-nav-main nav > ul > li.dropdown .dropdown-menu li.accessibility-open > a {
-		background-color: #f8f9fa;
+		background-color: #ceecfa;
+		color: #333;
 	}
 
 	#header .header-nav-main nav > ul > li.dropdown .dropdown-menu li.dropdown-submenu {
@@ -2064,7 +2065,7 @@ html.sticky-header-enabled.sticky-header-active #header .header-logo-sticky-chan
 	#header .header-nav.header-nav-links nav > ul > li > a, #header .header-nav.header-nav-links nav > ul > li:hover > a, #header .header-nav.header-nav-line nav > ul > li > a, #header .header-nav.header-nav-line nav > ul > li:hover > a {
 		position: relative;
 		background: transparent !important;
-		padding: 0 .9rem;
+		padding: 1rem;
 		margin: 1px 0 0;
 		min-height: 60px;
 		height: 100%;
