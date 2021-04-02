@@ -22,7 +22,7 @@
   background-color: #e37605;
   border-radius: 5px;
   color: #FFFFFF;
-  font-size: 14px;
+  /* font-size: 14px; */
   line-height: 1.3;
   margin: 10px 5px;
   padding: 10px 5px 10px 5px;
@@ -41,11 +41,11 @@
   text-align: center;
 }
 
-.modal-body p.note,
-.modal-body p.noteb {
-  font-size: 15px;
-  margin-bottom: 5px;
-}
+/* .modal-body p.note,
+.modal-body p.noteb { */
+  /* font-size: 15px; */
+  /* margin-bottom: 5px;
+} */
 
 .embed-item {
   border: 0;
