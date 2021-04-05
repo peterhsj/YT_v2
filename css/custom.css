@@ -5,9 +5,30 @@ body {
 .blockquote__bg {
   background-color: #FFFFFF;
 }
-.image-hotspots {
+.image-hotspot {
+  align-items: center;
   display: flex;
+  height: 3em;
   justify-content: center;
+  width: 3em;
+}
+.image-hotspot strong {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+.image-hotspot .ring {
+  position: absolute;
+  left: auto;
+  top: auto;
+  margin: 0;
+}
+.image-hotspot .circle {
+  position: absolute;
+  left: auto;
+  top: auto;
+  margin: 0;
 }
 .pro-spec {
   clear: both;
@@ -25,7 +46,6 @@ body {
   background-color: #e37605;
   border-radius: 5px;
   color: #FFFFFF;
-  /* font-size: 14px; */
   line-height: 1.3;
   margin: 10px 5px;
   padding: 10px 5px 10px 5px;
@@ -43,13 +63,6 @@ body {
   padding-bottom: 10px;
   text-align: center;
 }
-
-/* .modal-body p.note,
-.modal-body p.noteb { */
-  /* font-size: 15px; */
-  /* margin-bottom: 5px;
-} */
-
 .embed-item {
   border: 0;
   height: 100%;
@@ -58,19 +71,16 @@ body {
   top: 0;
   width: 100%;
 }
-
 .special-5 {
   padding-left: 5px;
   padding-right: 5px;
   vertical-align: 0.015rem;
 }
-
 .special-10 {
   padding-left: 10px;
   padding-right: 10px;
   vertical-align: 0.125rem;
 }
-
 .list.list-ordened li.actived::before {
   color: #ffffff;
   background-color: #0088CC;
@@ -78,10 +88,35 @@ body {
   transition-property: all;
   transition-timing-function: linear;
 }
-
 .list.list-ordened li.actived h4 {
   color: #0088CC;
   transition-duration: 0.3s;
   transition-property: all;
   transition-timing-function: linear;
+}
+#footer {
+  background-image: url("../img/backgrounds/background-2.jpg");
+  background-size: cover;
+}
+.social-icons li {
+  margin: 0 10px 0 0;
+}
+.social-icons li a {
+  height: 35px;
+  line-height: 35px;
+  width: 35px;
+  font-size: 1.5rem;
+}
+.card-body a {
+  display: inline-block;
+  margin: 10px 5px;
+}
+.owl-item.owl-index.position-relative {
+  background-image: url('../img/backgrounds/index_bg.jpg');
+  background-size: cover;
+}
+@media screen and (max-width: 575px) {
+  .owl-item.position-relative {
+    background-size: cover;
+  }
 }
