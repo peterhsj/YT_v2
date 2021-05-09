@@ -107,9 +107,12 @@ body {
   width: 35px;
   font-size: 1.5rem;
 }
-.card-body a {
+.shop__group a {
   display: inline-block;
   margin: 10px 5px;
+}
+.shop__group {
+  background-color: #ffffff;
 }
 .owl-item.owl-index.position-relative {
   background-image: url('../img/backgrounds/index_bg.jpg');
