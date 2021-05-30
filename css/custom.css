@@ -94,6 +94,13 @@ body {
   transition-property: all;
   transition-timing-function: linear;
 }
+.list.list-alert {
+  list-style: none;
+}
+.list.list-alert li {
+  text-indent: -0.75rem;
+  padding-left: 1rem;;
+}
 #footer {
   background-image: url("../img/backgrounds/background-2.jpg");
   background-size: cover;
