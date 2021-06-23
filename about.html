@@ -1,7 +1,6 @@
 <!DOCTYPE html>
 <html>
 	<head>
-
 		<!-- Basic -->
 		<meta charset="utf-8">
 		<meta http-equiv="X-UA-Compatible" content="IE=edge">	
@@ -26,7 +25,6 @@
 		<link rel="stylesheet" href="vendor/bootstrap/css/bootstrap.min.css">
 		<link rel="stylesheet" href="vendor/fontawesome-free/css/all.min.css">
 		<link rel="stylesheet" href="vendor/animate/animate.compat.css">
-		<!-- <link rel="stylesheet" href="vendor/simple-line-icons/css/simple-line-icons.min.css"> -->
 		<link rel="stylesheet" href="vendor/owl.carousel/assets/owl.carousel.min.css">
 		<link rel="stylesheet" href="vendor/owl.carousel/assets/owl.theme.default.min.css">
 		<link rel="stylesheet" href="vendor/magnific-popup/magnific-popup.min.css">
@@ -35,10 +33,6 @@
   	<link rel="stylesheet" href="css/yt-icon.css">
 		<link rel="stylesheet" href="css/theme.css">
 		<link rel="stylesheet" href="css/theme-elements.css">
-		<!-- <link rel="stylesheet" href="css/theme-blog.css"> -->
-		<!-- <link rel="stylesheet" href="css/theme-shop.css"> -->
-
-
 
 		<!-- Skin CSS -->
 		<link id="skinCSS" rel="stylesheet" href="css/skins/default.css">
@@ -48,7 +42,32 @@
 
 		<!-- Head Libs -->
 		<script src="vendor/modernizr/modernizr.min.js"></script>
+		<!-- Global site tag (gtag.js) - Google Ads: 936755895 -->
+		<script async src="https://www.googletagmanager.com/gtag/js?id=AW-936755895"></script>
+		<script>
+			window.dataLayer = window.dataLayer || [];
 
+			function gtag() {
+				dataLayer.push(arguments);
+			}
+			gtag('js', new Date());
+			gtag('config', 'AW-936755895');
+		</script>
+		<!-- Event snippet for 二代智慧無線麥克風擴音系列 conversion page In your html page, add the snippet and call gtag_report_conversion when someone clicks on the chosen link or button. -->
+		<script>
+			function gtag_report_conversion(url) {
+				var callback = function () {
+					if (typeof (url) != 'undefined') {
+						window.location = url;
+					}
+				};
+				gtag('event', 'conversion', {
+					'send_to': 'AW-936755895/Y9VjCIzg99IBELeF174D',
+					'event_callback': callback
+				});
+				return false;
+			}
+		</script>
 	</head>
 	<body>
 		<div id="fb-root"></div>
@@ -61,7 +80,6 @@
 								<div class="header-row">
 									<div class="header-logo">
 										<a href="index.html">
-											<!-- <img alt="Porto" width="100" height="48" data-sticky-width="82" data-sticky-height="40" src="img/logo-default-slim.png"> -->
 											<span class="icon-logo_2"></span>
 											<span class="font-weight-extra-bold">養聲堂科技</span>
 										</a>
@@ -528,15 +546,10 @@
 		<script src="vendor/jquery.cookie/jquery.cookie.min.js"></script>
 		<script src="vendor/popper/umd/popper.min.js"></script>
 		<script src="vendor/bootstrap/js/bootstrap.min.js"></script>
-		<!-- <script src="vendor/jquery.validation/jquery.validate.min.js"></script> -->
-		<!-- <script src="vendor/jquery.easy-pie-chart/jquery.easypiechart.min.js"></script> -->
-		<!-- <script src="vendor/jquery.gmap/jquery.gmap.min.js"></script> -->
 		<script src="vendor/lazysizes/lazysizes.min.js"></script>
 		<script src="vendor/isotope/jquery.isotope.min.js"></script>
 		<script src="vendor/owl.carousel/owl.carousel.min.js"></script>
 		<script src="vendor/magnific-popup/jquery.magnific-popup.min.js"></script>
-		<!-- <script src="vendor/vide/jquery.vide.min.js"></script> -->
-		<!-- <script src="vendor/vivus/vivus.min.js"></script> -->
 
 		<!-- Theme Base, Components and Settings -->
 		<script src="js/theme.js"></script>
@@ -545,34 +558,7 @@
 		<script src="js/custom.js"></script>
 
 		<!-- Theme Initialization Files -->
-		<script src="js/theme.init.js"></script>
-
-		<!-- Global site tag (gtag.js) - Google Ads: 936755895 -->
-		<script async src="https://www.googletagmanager.com/gtag/js?id=AW-936755895"></script>
-		<script>
-			window.dataLayer = window.dataLayer || [];
-			function gtag(){dataLayer.push(arguments);}
-			gtag('js', new Date());
-
-			gtag('config', 'AW-936755895');
-		</script>
-
-		<!-- Event snippet for 二代智慧無線麥克風擴音系列 conversion page In your html page, add the snippet and call gtag_report_conversion when someone clicks on the chosen link or button. -->
-		<script>
-			function gtag_report_conversion(url) {
-				var callback = function () {
-					if (typeof (url) != 'undefined') {
-						window.location = url;
-					}
-				};
-				gtag('event', 'conversion', {
-					'send_to': 'AW-936755895/Y9VjCIzg99IBELeF174D',
-					'event_callback': callback
-				});
-				return false;
-			}
-		</script>
-		
+		<script src="js/theme.init.js"></script>	
 		<script>
 			(function (d, s, id) {
 				var js, fjs = d.getElementsByTagName(s)[0];

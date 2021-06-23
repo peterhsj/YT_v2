@@ -57,7 +57,32 @@
 
 	<!-- Head Libs -->
 	<script src="vendor/modernizr/modernizr.min.js"></script>
+	<!-- Global site tag (gtag.js) - Google Ads: 936755895 -->
+	<script async src="https://www.googletagmanager.com/gtag/js?id=AW-936755895"></script>
+	<script>
+		window.dataLayer = window.dataLayer || [];
 
+		function gtag() {
+			dataLayer.push(arguments);
+		}
+		gtag('js', new Date());
+		gtag('config', 'AW-936755895');
+	</script>
+	<!-- Event snippet for 二代智慧無線麥克風擴音系列 conversion page In your html page, add the snippet and call gtag_report_conversion when someone clicks on the chosen link or button. -->
+	<script>
+		function gtag_report_conversion(url) {
+			var callback = function () {
+				if (typeof (url) != 'undefined') {
+					window.location = url;
+				}
+			};
+			gtag('event', 'conversion', {
+				'send_to': 'AW-936755895/Y9VjCIzg99IBELeF174D',
+				'event_callback': callback
+			});
+			return false;
+		}
+	</script>
 </head>
 
 <body>
@@ -118,18 +143,6 @@
 															</a>
 														</li>
 													</ul>
-													<!-- <ul class="dropdown-menu">
-														<li>
-															<a class="dropdown-item" href="YS-250.html">YS-250 數位無線擴音音箱</a>
-														</li> 
-														<li class="dropdown">
-															<onclick="return gtag_report_conversion('http://youngtone.com.tw/smartMic.htm');">
-															<a class="dropdown-item" href="smartMic.html">二代智慧無線麥克風擴音系列</a>
-														</li>
-														<li>
-															<a class="dropdown-item" href="YH801.html">一代無線麥克風組</a>
-														</li>
-													</ul> -->
 												</li>
 												<li class="dropdown">
 													<a class="dropdown-item dropdown-toggle" href="service.html">
@@ -1320,22 +1333,6 @@
 								<a href="https://www.facebook.com/%E9%A4%8A%E8%81%B2%E5%A0%82%E7%A7%91%E6%8A%80-779961655447214/"
 									target="_blank"><span>FB粉絲團</span></a>
 							</p>
-							<!-- <div>
-										<h3 class="media-heading" style="font-size: 22px;font-weight: 600;margin-bottom: 0">
-											<i class="far fa-arrow-alt-right"></i> 春季優惠 實施中</h3>
-									</div>
-									<h3 style="color:#4472C4;margin:0 0 13px 25px;font-size: 20px;font-weight: 500;"><a
-											href="https://www.facebook.com/permalink.php?story_fbid=1919349818175053&id=779961655447214" target="_blank"><span>保固延長為 18 個月</span></a></h3>
-									<div>
-										<h3 class="media-heading" style="font-size: 22px;font-weight: 600"><i
-												class="far fa-arrow-alt-right"></i> 新上市</h3>
-									</div>
-									<h3 style="margin:5px 0 13px 25px;font-size: 20px;font-weight: 500">
-										<span>"二代智慧無線麥克風擴音系統"</span><br>
-										<a href="smartMic.htm"><span>產品介紹</span></a> |
-										<a href="https://www.facebook.com/%E9%A4%8A%E8%81%B2%E5%A0%82%E7%A7%91%E6%8A%80-779961655447214/"
-											target="_blank"><span>FB粉絲團</span></a>
-									</h3> -->
 						</div>
 					</div>
 				</div>
@@ -1393,34 +1390,6 @@
 
 	<!-- Theme Initialization Files -->
 	<script src="js/theme.init.js"></script>
-
-	<!-- Global site tag (gtag.js) - Google Ads: 936755895 -->
-	<script async src="https://www.googletagmanager.com/gtag/js?id=AW-936755895"></script>
-	<script>
-		window.dataLayer = window.dataLayer || [];
-
-		function gtag() {
-			dataLayer.push(arguments);
-		}
-		gtag('js', new Date());
-		gtag('config', 'AW-936755895');
-	</script>
-
-	<!-- Event snippet for 二代智慧無線麥克風擴音系列 conversion page In your html page, add the snippet and call gtag_report_conversion when someone clicks on the chosen link or button. -->
-	<script>
-		function gtag_report_conversion(url) {
-			var callback = function () {
-				if (typeof (url) != 'undefined') {
-					window.location = url;
-				}
-			};
-			gtag('event', 'conversion', {
-				'send_to': 'AW-936755895/Y9VjCIzg99IBELeF174D',
-				'event_callback': callback
-			});
-			return false;
-		}
-	</script>
 
 	<!-- FB -->
 	<script>
