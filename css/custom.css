@@ -135,3 +135,26 @@ body {
     max-width: 90%;
   }
 }
+
+/*  index modal */
+.modal__button {
+  color: #0088CC;
+  text-decoration: none;
+  background-color: transparent;
+  font-size: 15px;
+  font-weight: 500;
+}
+.modal__button:hover {
+  color: #0099e6;
+  text-decoration: underline;
+}
+.modal__button--promote {
+  color: #28a745;
+  text-decoration: none;
+  background-color: transparent;
+  font-size: 15px;
+  font-weight: 500;
+}
+.modal__button:hover {
+  text-decoration: underline;
+}
