@@ -158,3 +158,27 @@ body {
 .modal__button:hover {
   text-decoration: underline;
 }
+
+/**
+* media style
+*/
+.media-heading {
+  margin-bottom: 0;
+  color: #ff6600;
+  font-size: 24px;
+  font-weight: 600;
+}
+.media-content {
+  margin: 15px 0 13px 0;
+  color: #86ae3c;
+  font-size: 20px;
+  font-weight: 500;
+  line-height: 30px;
+}
+.media-link {
+  border-bottom: 1px solid;
+}
+.media-link:hover {
+  text-decoration: none;
+  border-bottom: 1px solid;
+}
