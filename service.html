@@ -179,13 +179,13 @@
                   <li class="nav-item recharge active">
                     <a class="nav-link text-4" href="#recharge" data-toggle="tab">電池 / 充電知識</a>
                   </li>
-                  <li class="nav-item manual active">
+                  <li class="nav-item manual">
                     <a class="nav-link text-4" href="#manual" data-toggle="tab">養聲堂產品使用說明</a>
                   </li>
-                  <li class="nav-item innovation active">
+                  <li class="nav-item innovation">
                     <a class="nav-link text-4" href="#innovation" data-toggle="tab">產品設計創新</a>
                   </li>
-                  <li class="nav-item wireless active">
+                  <li class="nav-item wireless">
                     <a class="nav-link text-4" href="#wireless" data-toggle="tab">數位無線技術</a>
                   </li>
 
@@ -203,10 +203,6 @@
 								<h4 class="text-5-6">電池 / 充電知識</h4>
 								<div class="col">
 									<div class="toggle toggle-primary m-0" data-plugin-toggle>
-										<!-- <h2 class="font-weight-extra-bold text-5 mb-2">
-											<i class="far fa-play-circle"></i>
-											充電 / 充電知識
-										</h2> -->
 										<section class="toggle active">
 											<a class="toggle-title text-4">充電注意事項</a>
 											<div id="ch_1" class="toggle-content mt-3">
@@ -501,20 +497,22 @@
                     <section class="toggle">
                       <a class="toggle-title text-4">避回音</a>
                       <div id="ds_2" class="toggle-content">
-                        <p class="line-height-7 text-4 mb-0">回音的造成一般是因喇叭聲音過大，音波碰到牆壁又回到麥克風而重複收音，部分與教室格局或空間比例有關。<span
-                            style="border-bottom:1px solid #666">養聲堂</span>麥克風/擴音器皆已是數位化的產品，開發時已經透過硬體和軟體同時做避免回音的設計，很少有發生回音問題。</p>
+                        <p class="line-height-7 text-4 mb-0">回音的造成大部分是因喇叭聲音過大，音波碰到牆壁又回到麥克風而重覆收音造成 ( 回授 )，部分也與房間格局或空間比例有關。養聲堂麥克風/擴音器皆已是數位化的產品，開發時已經透過硬體和軟體技術同時做避免回音的設計，很少有發生回音問題。若您有此問題，請參考下列建議。</p>
                         <ul class="list list-icons list-icons-lg">
                           <li>
                             <i class="fas fa-angle-right"></i>
-                            <span class="text-4">首先，建議您參考說明書或在 Youtube 搜尋”養聲堂” 影片使用說明。</span>
+                            <span class="text-4">若使用麥克風無線擴音音箱有此現象，是因空間 ( 房間太小或擴音音量過大所造成，先將音量向下調整一些。</span>
                           </li>
                           <li>
                             <i class="fas fa-angle-right"></i>
-                            <span class="text-4">第二，先妥善調整頸掛穿戴無線麥克風 ( YS-150 ) 或手持麥克風 ( YS-100 ) 多試試調整麥克風頭和你嘴巴的位置和距離 ( 2~5cm
-                              )，您可以將發聲的音量放大些，最後再調整擴音器上的音量設定，避免擴音機調整的音量太大，即可改善。</span>
+                            <span class="text-4">也可能是您使用時站在音箱正前方，可將音箱小轉一個角度試試 ( 避免喇叭正向直接朝向麥克風 )。</span>
+                          </li>
+                          <li>
+                            <i class="fas fa-angle-right"></i>
+                            <span class="text-4">產品為指向性麥克風，為達收音最佳效果，確定麥克風朝向嘴巴方向有較佳效果。先試試調整麥克風頭和你嘴巴的位置和距離 ( 2~5cm )，您可以將發聲的音量加大些，最後再調整擴音器上的音量設定，交互測試看結果如何，也可改善。( 可參考說明書或在
+                            Youtube 搜尋 "養聲堂" 麥克風使用方式之說明 )。</span>
                           </li>
                         </ul>
-                        <p class="line-height-7 text-4 mb-0">若麥克風使用無線擴音音箱時若有此現象，是因空間太小&聲音過大所造成！</p>
                       </div>
                     </section>
                     <section class="toggle">
@@ -912,6 +910,9 @@
 		<!-- Theme Initialization Files -->
 		<script src="js/theme.init.js"></script>
 		<script>
+      /**
+       * FB
+      */
 			(function (d, s, id) {
 				var js, fjs = d.getElementsByTagName(s)[0];
 				if (d.getElementById(id)) return;
@@ -920,11 +921,13 @@
 				js.src = "//connect.facebook.net/zh_TW/sdk.js#xfbml=1&version=v2.8";
 				fjs.parentNode.insertBefore(js, fjs);
 			}(document, 'script', 'facebook-jssdk'));
-		</script>
-
-		<script>
+      </script>
+      <script>
+      /**
+       * 依照網址自動開啟對應 QA
+       */
 			$(document).ready(function () {
-				let serviceTab = [
+				const serviceTab = [
           'recharge',
           'manual',
           'innovation',
@@ -932,22 +935,30 @@
           'warranty',
 					'microphoneUpgrade'
 				];
-				let params = new URLSearchParams(document.location.search.substring(1));
-				let currentTab = params.get("service");
+				const params = new URLSearchParams(document.location.search.substring(1));
+        // const togglePrimary = document.querySelectorAll('.toggle-primary');
+        // [...togglePrimary].forEach(item => {
+        //   console.log(item);
+        // });
+        // 取得 service
+        const currentTab = params.get("service");
 				if (currentTab !== '') {
 					serviceTab.forEach(function(tab) {
 						if (tab === currentTab) {
-							$('.' + tab).addClass('active');
+							$(`.${tab}`).addClass('active');
 							$('.nav-tabs a[href="#' + tab + '"]').tab('show');
 						} else {
-							$('.' + tab).removeClass('active');
+							$(`.${tab}`).removeClass('active');
 						}		
 					});
 				};
-				let currentQuestion = params.get("qa");
-				$('#' + currentQuestion).toggle();
+        // 取得 qa
+				const currentQuestion = params.get("qa");
+        const selectedItemParent = document.querySelector(`#${currentQuestion}`).parentElement;
+        selectedItemParent.classList.add('active');
+				$(`#${currentQuestion}`).toggle();
 				setTimeout(function() {
-					$('html, body').animate({scrollTop: $('#' + currentQuestion).offset().top - 200}, 1000)
+					$('html, body').animate({scrollTop: $(`#${currentQuestion}`).offset().top - 200}, 1000)
 				}, 500);
 			});
 		</script>
