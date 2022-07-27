@@ -168,11 +168,35 @@ body {
   font-size: 24px;
   font-weight: 600;
 }
+.media-heading-main {
+  margin-bottom: 0;
+  color: #ff6600;
+  font-size: 20px;
+  font-weight: normal;
+}
+.subTitle-main {
+  margin-bottom: 0;
+  color: #ff6600;
+  font-size: 18px;
+  font-weight: normal;
+}
+.subTitle-main .media-link {
+  color: #ff6600;
+  font-size: 20px;
+  font-weight: bolder;
+}
 .media-content {
   margin: 15px 0 13px 0;
   color: #86ae3c;
   font-size: 20px;
   font-weight: 500;
+  line-height: 30px;
+}
+.media-content-main {
+  margin: 0 0 20px;
+  color: #86ae3c;
+  font-size: 16px;
+  font-weight: normal;
   line-height: 30px;
 }
 .media-link {
