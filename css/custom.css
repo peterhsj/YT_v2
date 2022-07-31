@@ -206,3 +206,20 @@ body {
   text-decoration: none;
   border-bottom: 1px solid;
 }
+html .scroll-to-top {
+  border-radius: 4px 4px;
+  bottom: 5px;
+  padding: 8px 10px 32px;
+  right: 10px;
+  min-width: 45px;
+}
+.testimonial blockquote:before {
+  left: 20px !important;
+  top: 20px !important;
+  color: #FFF;
+  content: "“";
+  font-size: 85px;
+  font-style: normal;
+  line-height: 1;
+  position: absolute;
+}
